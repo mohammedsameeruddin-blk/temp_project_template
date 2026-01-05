@@ -1,14 +1,6 @@
-{# copier:raw #}
-# This file is managed by Copier. Manual changes may be overwritten.
-{# endcopier #}
-
 tasks:
   - data_loading
   - data_preprocessing
   - data_featurization
   - train_test_split
-
-{% for m in model %}
-  - {{ m.name }}:
-      depends_on: train_test_split
-{% endfor %}
+  - !include models.yml

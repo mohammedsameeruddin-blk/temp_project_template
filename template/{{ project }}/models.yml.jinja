@@ -1,0 +1,4 @@
+{% for m in model %}
+  - {{ m.name }}:
+      depends_on: train_test_split
+{% endfor %}

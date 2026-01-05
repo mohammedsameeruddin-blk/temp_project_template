@@ -37,6 +37,6 @@ model:
   default:
     - name: risk_level_model
 
-# Questions (define these only if you need them)
-_tasks:
-  - "{% if _stage == 'task' %}echo 'Updated tasks.yml'{% endif %}"
+_skip_if_exists:
+  - tasks.yml
+  - "!models.yml"  # Always overwrite this file
