@@ -1,0 +1,11 @@
+_answers_file: ".copier-answers.yml"
+
+# Project info
+project:
+  type: str
+  help: "Enter data science project name (e.g., blk-customer)"
+
+model:
+  type: yaml
+  default:
+    - name: risk_level_model
