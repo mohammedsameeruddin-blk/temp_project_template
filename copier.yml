@@ -14,3 +14,7 @@ model:
   type: yaml
   default:
     - name: risk_level_model
+
+
+_force:
+  - tasks.yml
