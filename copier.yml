@@ -14,4 +14,3 @@ model:
   type: yaml
   default:
     - name: risk_level_model
-    - name: new_customer_model
