@@ -1,9 +1,31 @@
-_answers_file: ".copier-answers.yml"
+# _answers_file: ".copier-answers.yml"
 
+# _min_copier_version: '9'
+# _templates_suffix: .jinja
+# _subdirectory: template
+# _overwrite: true
+
+# # Project info
+# project:
+#   type: str
+#   help: "Enter data science project name (e.g., blk-customer)"
+
+# model:
+#   type: yaml
+#   default:
+#     - name: risk_level_model
+
+
+# _force:
+#   - tasks.yml
+
+# overwrite: true
+# update: true
+
+_answers_file: ".copier-answers.yml"
 _min_copier_version: '9'
 _templates_suffix: .jinja
 _subdirectory: template
-_overwrite: true
 
 # Project info
 project:
@@ -15,6 +37,6 @@ model:
   default:
     - name: risk_level_model
 
-
-_force:
-  - tasks.yml
+# Questions (define these only if you need them)
+_tasks:
+  - "{% if _stage == 'task' %}echo 'Updated tasks.yml'{% endif %}"
