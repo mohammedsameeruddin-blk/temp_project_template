@@ -3,7 +3,7 @@ _answers_file: ".copier-answers.yml"
 _min_copier_version: '9'
 _templates_suffix: .jinja
 _subdirectory: template
-_overwrite: true
+_overwrite: false
 
 # Project info
 project:
